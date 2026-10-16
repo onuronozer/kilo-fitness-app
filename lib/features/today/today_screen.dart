@@ -13,7 +13,7 @@ class TodayScreen extends StatelessWidget {
         dn = PlanLogic.dayNumber(now),
         ni = PlanLogic.nutritionDay(now),
         monday = now.weekday == DateTime.monday;
-    final w = workouts[((dn - 1) % workouts.length)];
+    final w = workoutForDate(now);
     return ListView(
       key: const Key('today-screen'),
       padding: const EdgeInsets.all(16),
@@ -41,7 +41,7 @@ class TodayScreen extends StatelessWidget {
                 Text(w.subtitle),
                 const SizedBox(height: 10),
                 Text(
-                  '${w.exercises.length} hareket${w.walk ? ' • ${state.settings.inclineMinutes.toInt()} dk eğimli yürüyüş' : ''}',
+                  '${w.exercises.length} hareket${w.walk ? ' • Önce ${state.settings.inclineMinutes.toInt()} dk eğimli yürüyüş' : ''}',
                 ),
                 if (monday) ...[
                   const SizedBox(height: 8),

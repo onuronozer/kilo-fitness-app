@@ -83,4 +83,36 @@ void main() {
       );
     }
   });
+  test('haftalık plan doğru güne bağlanır', () {
+    expect(workoutForDate(DateTime(2026, 10, 19)).title, 'Upper A');
+    expect(workoutForDate(DateTime(2026, 10, 20)).title, 'Evde Core A');
+    expect(workoutForDate(DateTime(2026, 10, 25)).title, 'Tam dinlenme');
+    expect(upperA.exercises.length, 8);
+    expect(upperB.exercises.length, 9);
+    expect(lowerA.exercises.length, 6);
+    expect(lowerB.exercises.length, 6);
+    expect(coreA.exercises.length, 4);
+    expect(coreB.exercises.length, 5);
+  });
+  test('15 günlük planda dört öğün ve her gün tavuk şiş vardır', () {
+    final meals = buildMeals();
+    expect(meals.length, 60);
+    for (var day = 1; day <= 15; day++) {
+      final daily = meals.where((meal) => meal.dayNumber == day).toList();
+      expect(daily.map((meal) => meal.mealType).toSet(), {
+        'Kahvaltı',
+        'Öğle',
+        'Ara',
+        'Akşam',
+      });
+      expect(
+        daily.singleWhere((meal) => meal.mealType == 'Öğle').name,
+        contains('Tavuk şiş'),
+      );
+    }
+    expect(
+      meals.where((meal) => meal.name.toLowerCase().contains('whey')).length,
+      lessThan(8),
+    );
+  });
 }

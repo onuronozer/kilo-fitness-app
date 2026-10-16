@@ -21,8 +21,7 @@ class _WorkoutScreenState extends State<WorkoutScreen> {
   @override
   void initState() {
     super.initState();
-    workout =
-        workouts[(PlanLogic.dayNumber(DateTime.now()) - 1) % workouts.length];
+    workout = workoutForDate(DateTime.now());
   }
 
   @override
@@ -93,20 +92,34 @@ class _WorkoutScreenState extends State<WorkoutScreen> {
             ),
           ),
         ),
+      if (workout.walk)
+        Card(
+          color: Theme.of(c).colorScheme.primaryContainer,
+          child: ListTile(
+            leading: const CircleAvatar(child: Text('1')),
+            title: Text(
+              '${widget.state.settings.inclineMinutes.toInt()} dk eğimli yürüyüş',
+            ),
+            subtitle: const Text('Ağırlık hareketlerinden önce ısınma'),
+          ),
+        ),
+      if (workout.exercises.isEmpty)
+        const Card(
+          child: Padding(
+            padding: EdgeInsets.all(24),
+            child: Column(
+              children: [
+                Icon(Icons.self_improvement, size: 48),
+                SizedBox(height: 12),
+                Text('Bugün tam dinlenme günü.'),
+              ],
+            ),
+          ),
+        ),
       ...workout.exercises.map(
         (e) =>
             _ExerciseCard(state: widget.state, exercise: e, onRest: startTimer),
       ),
-      if (workout.walk)
-        Card(
-          child: ListTile(
-            leading: const Icon(Icons.directions_walk),
-            title: Text(
-              '${widget.state.settings.inclineMinutes.toInt()} dk eğimli yürüyüş',
-            ),
-            subtitle: const Text('Ağırlık antrenmanı sonrası kontrollü tempo'),
-          ),
-        ),
     ],
   );
 }
@@ -144,7 +157,7 @@ class _ExerciseCardState extends State<_ExerciseCard> {
               child: ExerciseIllustration(exercise: e),
             ),
             Text(
-              '${e.sets} × ${e.minReps}–${e.maxReps}',
+              e.prescriptionLabel,
               style: const TextStyle(fontWeight: FontWeight.bold),
             ),
             if (prev != null)

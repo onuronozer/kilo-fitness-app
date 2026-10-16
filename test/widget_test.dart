@@ -28,12 +28,15 @@ void main() {
   testWidgets('workout set girişi çalışır', (t) async {
     final s = await state();
     await t.pumpWidget(app(WorkoutScreen(state: s)));
-    await t.enterText(find.byKey(const Key('kg-incline_chest_press-0')), '40');
     await t.enterText(
-      find.byKey(const Key('reps-incline_chest_press-0')),
+      find.byKey(const Key('kg-wide_grip_seated_cable_row-0')),
+      '40',
+    );
+    await t.enterText(
+      find.byKey(const Key('reps-wide_grip_seated_cable_row-0')),
       '10',
     );
-    await t.tap(find.byKey(const Key('done-incline_chest_press-0')));
+    await t.tap(find.byKey(const Key('done-wide_grip_seated_cable_row-0')));
     await t.pump();
     expect(
       s.sets.values
