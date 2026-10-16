@@ -2,6 +2,8 @@
 
 KILO; antrenman, 15 günlük beslenme ve vücut gelişimini internete veri göndermeden tek yerde izlemek için hazırlanmış Flutter uygulamasıdır. 19 Ekim 2026 başlangıç tarihinden doğru program gününü otomatik seçer ve başlangıç dönemi sonrasında döngüyü sürdürür.
 
+**Canlı uygulama:** https://onuronozer.github.io/kilo-fitness-app/
+
 ## Ekran görüntüleri
 
 Uygulama; **Bugün**, **Antrenman**, **Beslenme**, **Gelişim** ve **Ayarlar** olmak üzere beş ana sekmeden oluşur. Ekran görüntüleri ilk cihaz sürümünden sonra bu bölüme eklenecektir; uygulama içi ekranların tamamı kaynak koddan çalışır.
