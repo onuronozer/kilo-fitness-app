@@ -68,13 +68,18 @@ void main() {
     expect(t.calories, 100);
     expect(t.protein, 10);
   });
-  test('planda kullanılan her egzersizin SVG asseti vardır', () {
+  test('planda kullanılan her egzersizin WebP ve PNG asseti vardır', () {
     final exercises = workouts.expand((workout) => workout.exercises).toSet();
     for (final exercise in exercises) {
       expect(
         File(exercise.illustrationAsset).existsSync(),
         isTrue,
         reason: exercise.id,
+      );
+      expect(
+        File(exercise.illustrationFallbackAsset).existsSync(),
+        isTrue,
+        reason: '${exercise.id} PNG fallback',
       );
     }
   });

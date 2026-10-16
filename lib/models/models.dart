@@ -10,7 +10,8 @@ class Exercise {
     this.rest = 90,
   });
   final String id, name, english;
-  String get illustrationAsset => 'assets/exercises/$id.svg';
+  String get illustrationAsset => 'assets/exercises/$id.webp';
+  String get illustrationFallbackAsset => 'assets/exercises/$id.png';
   final int sets, minReps, maxReps, rest;
   final List<String> tips;
 }

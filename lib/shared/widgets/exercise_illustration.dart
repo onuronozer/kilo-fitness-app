@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import '../../models/models.dart';
 
 class ExerciseIllustration extends StatelessWidget {
@@ -18,10 +17,15 @@ class ExerciseIllustration extends StatelessWidget {
     child: SizedBox(
       width: double.infinity,
       height: height,
-      child: SvgPicture.asset(
+      child: Image.asset(
         exercise.illustrationAsset,
         fit: BoxFit.contain,
-        semanticsLabel: exercise.name,
+        semanticLabel: exercise.name,
+        errorBuilder: (context, error, stackTrace) => Image.asset(
+          exercise.illustrationFallbackAsset,
+          fit: BoxFit.contain,
+          semanticLabel: exercise.name,
+        ),
       ),
     ),
   );

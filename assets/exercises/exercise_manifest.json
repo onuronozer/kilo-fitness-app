@@ -1,190 +1,227 @@
 {
-  "version": "1.0.0",
+  "name": "KILO Premium Exercise Assets",
+  "version": "2.0.0",
   "count": 30,
-  "format": "SVG",
-  "dimensions": "1200x560",
-  "background": "transparent",
-  "style": "dark-app compatible, start/end side-by-side, teal motion arrow",
+  "formats": [
+    "png",
+    "webp"
+  ],
+  "size": "1200x700",
+  "background": "dark app-ready",
+  "notes": {
+    "close_grip_lat_pulldown": "Premium Lat Pulldown visual is used as closest visual substitute; label/instructions define close grip.",
+    "all_others": "Dedicated premium start/end visual."
+  },
   "exercises": [
     {
       "id": "incline_chest_press",
-      "turkishName": "Eğimli Sehpada Göğüs Press",
+      "turkishName": "Eğimli Göğüs Press",
       "englishName": "Incline Chest Press",
-      "asset": "assets/exercises/incline_chest_press.svg"
+      "png": "assets/exercises/incline_chest_press.png",
+      "webp": "assets/exercises/incline_chest_press.webp"
     },
     {
       "id": "chest_supported_single_arm_row",
       "turkishName": "Göğüs Destekli Tek Kol Sırt Çekiş",
       "englishName": "Chest-Supported Single-Arm Row",
-      "asset": "assets/exercises/chest_supported_single_arm_row.svg"
+      "png": "assets/exercises/chest_supported_single_arm_row.png",
+      "webp": "assets/exercises/chest_supported_single_arm_row.webp"
     },
     {
       "id": "close_grip_lat_pulldown",
       "turkishName": "Dar Tutuş Yukarıdan Göğse Çekiş",
       "englishName": "Close-Grip Lat Pulldown",
-      "asset": "assets/exercises/close_grip_lat_pulldown.svg"
+      "png": "assets/exercises/close_grip_lat_pulldown.png",
+      "webp": "assets/exercises/close_grip_lat_pulldown.webp"
     },
     {
       "id": "pec_deck",
       "turkishName": "Göğüs Açış Makinesi",
       "englishName": "Pec Deck / Chest Fly",
-      "asset": "assets/exercises/pec_deck.svg"
+      "png": "assets/exercises/pec_deck.png",
+      "webp": "assets/exercises/pec_deck.webp"
     },
     {
       "id": "machine_shoulder_press",
       "turkishName": "Oturarak Omuz Press Makinesi",
       "englishName": "Machine Shoulder Press",
-      "asset": "assets/exercises/machine_shoulder_press.svg"
+      "png": "assets/exercises/machine_shoulder_press.png",
+      "webp": "assets/exercises/machine_shoulder_press.webp"
     },
     {
       "id": "lateral_raise",
       "turkishName": "Kolları Yana Açış",
       "englishName": "Lateral Raise",
-      "asset": "assets/exercises/lateral_raise.svg"
+      "png": "assets/exercises/lateral_raise.png",
+      "webp": "assets/exercises/lateral_raise.webp"
     },
     {
       "id": "cable_curl",
       "turkishName": "Kabloda Biceps Curl",
       "englishName": "Cable Curl",
-      "asset": "assets/exercises/cable_curl.svg"
+      "png": "assets/exercises/cable_curl.png",
+      "webp": "assets/exercises/cable_curl.webp"
     },
     {
       "id": "vbar_triceps_pushdown",
       "turkishName": "V Barı Aşağı İtiş",
       "englishName": "V-Bar Triceps Pushdown",
-      "asset": "assets/exercises/vbar_triceps_pushdown.svg"
+      "png": "assets/exercises/vbar_triceps_pushdown.png",
+      "webp": "assets/exercises/vbar_triceps_pushdown.webp"
     },
     {
       "id": "leg_press",
       "turkishName": "Bacak İtiş Makinesi",
       "englishName": "Leg Press",
-      "asset": "assets/exercises/leg_press.svg"
+      "png": "assets/exercises/leg_press.png",
+      "webp": "assets/exercises/leg_press.webp"
     },
     {
       "id": "walking_lunge",
       "turkishName": "Öne Adım Çöküş",
       "englishName": "Walking Lunge",
-      "asset": "assets/exercises/walking_lunge.svg"
+      "png": "assets/exercises/walking_lunge.png",
+      "webp": "assets/exercises/walking_lunge.webp"
     },
     {
       "id": "leg_extension",
       "turkishName": "Oturarak Dizi Açma",
       "englishName": "Leg Extension",
-      "asset": "assets/exercises/leg_extension.svg"
+      "png": "assets/exercises/leg_extension.png",
+      "webp": "assets/exercises/leg_extension.webp"
     },
     {
       "id": "seated_leg_curl",
       "turkishName": "Bacağı Arkaya Bükme",
       "englishName": "Seated Leg Curl",
-      "asset": "assets/exercises/seated_leg_curl.svg"
+      "png": "assets/exercises/seated_leg_curl.png",
+      "webp": "assets/exercises/seated_leg_curl.webp"
     },
     {
       "id": "hip_adduction_machine",
       "turkishName": "İç Bacak Kapatma Makinesi",
       "englishName": "Hip Adduction Machine",
-      "asset": "assets/exercises/hip_adduction_machine.svg"
+      "png": "assets/exercises/hip_adduction_machine.png",
+      "webp": "assets/exercises/hip_adduction_machine.webp"
     },
     {
       "id": "standing_calf_raise",
       "turkishName": "Parmak Ucuna Yükselme",
       "englishName": "Standing Calf Raise",
-      "asset": "assets/exercises/standing_calf_raise.svg"
+      "png": "assets/exercises/standing_calf_raise.png",
+      "webp": "assets/exercises/standing_calf_raise.webp"
     },
     {
       "id": "reverse_lunge",
       "turkishName": "Geri Adım Çöküş",
       "englishName": "Reverse Lunge",
-      "asset": "assets/exercises/reverse_lunge.svg"
+      "png": "assets/exercises/reverse_lunge.png",
+      "webp": "assets/exercises/reverse_lunge.webp"
     },
     {
       "id": "wide_grip_seated_cable_row",
       "turkishName": "Oturarak Geniş Barı Göğse Çekiş",
       "englishName": "Wide-Grip Seated Cable Row",
-      "asset": "assets/exercises/wide_grip_seated_cable_row.svg"
+      "png": "assets/exercises/wide_grip_seated_cable_row.png",
+      "webp": "assets/exercises/wide_grip_seated_cable_row.webp"
     },
     {
       "id": "lat_pulldown",
       "turkishName": "Yukarıdan Barı Göğse Çekiş",
       "englishName": "Lat Pulldown",
-      "asset": "assets/exercises/lat_pulldown.svg"
+      "png": "assets/exercises/lat_pulldown.png",
+      "webp": "assets/exercises/lat_pulldown.webp"
     },
     {
       "id": "cable_crossover",
       "turkishName": "Kabloları Önde Birleştirme",
       "englishName": "Cable Crossover",
-      "asset": "assets/exercises/cable_crossover.svg"
+      "png": "assets/exercises/cable_crossover.png",
+      "webp": "assets/exercises/cable_crossover.webp"
     },
     {
       "id": "face_pull",
       "turkishName": "Halatı Yüze Doğru Çekiş",
       "englishName": "Face Pull",
-      "asset": "assets/exercises/face_pull.svg"
+      "png": "assets/exercises/face_pull.png",
+      "webp": "assets/exercises/face_pull.webp"
     },
     {
       "id": "hammer_curl",
       "turkishName": "Dambılı Çekiç Tutuşla Kaldırma",
       "englishName": "Hammer Curl",
-      "asset": "assets/exercises/hammer_curl.svg"
+      "png": "assets/exercises/hammer_curl.png",
+      "webp": "assets/exercises/hammer_curl.webp"
     },
     {
       "id": "assisted_dip",
       "turkishName": "Dips Makinesinde Aşağı İtiş",
       "englishName": "Assisted Dip",
-      "asset": "assets/exercises/assisted_dip.svg"
+      "png": "assets/exercises/assisted_dip.png",
+      "webp": "assets/exercises/assisted_dip.webp"
     },
     {
       "id": "one_arm_cable_pushdown",
       "turkishName": "Tek Elle Kabloyu Aşağı İtiş",
       "englishName": "One-Arm Cable Pushdown",
-      "asset": "assets/exercises/one_arm_cable_pushdown.svg"
+      "png": "assets/exercises/one_arm_cable_pushdown.png",
+      "webp": "assets/exercises/one_arm_cable_pushdown.webp"
     },
     {
       "id": "dead_bug",
       "turkishName": "Sırtüstü Çapraz Kol-Bacak Uzatma",
       "englishName": "Dead Bug",
-      "asset": "assets/exercises/dead_bug.svg"
+      "png": "assets/exercises/dead_bug.png",
+      "webp": "assets/exercises/dead_bug.webp"
     },
     {
       "id": "side_plank",
       "turkishName": "Yan Plank",
       "englishName": "Side Plank",
-      "asset": "assets/exercises/side_plank.svg"
+      "png": "assets/exercises/side_plank.png",
+      "webp": "assets/exercises/side_plank.webp"
     },
     {
       "id": "bird_dog",
       "turkishName": "Dört Ayakta Çapraz Kol-Bacak Uzatma",
       "englishName": "Bird Dog",
-      "asset": "assets/exercises/bird_dog.svg"
+      "png": "assets/exercises/bird_dog.png",
+      "webp": "assets/exercises/bird_dog.webp"
     },
     {
       "id": "plank",
       "turkishName": "Dirsek Plank",
       "englishName": "Plank",
-      "asset": "assets/exercises/plank.svg"
+      "png": "assets/exercises/plank.png",
+      "webp": "assets/exercises/plank.webp"
     },
     {
       "id": "reverse_crunch",
       "turkishName": "Dizleri Göğse Çekerek Kalçayı Kaldırma",
       "englishName": "Reverse Crunch",
-      "asset": "assets/exercises/reverse_crunch.svg"
+      "png": "assets/exercises/reverse_crunch.png",
+      "webp": "assets/exercises/reverse_crunch.webp"
     },
     {
       "id": "heel_touch",
       "turkishName": "Yana Uzanıp Topuğa Dokunma",
       "englishName": "Heel Touch",
-      "asset": "assets/exercises/heel_touch.svg"
+      "png": "assets/exercises/heel_touch.png",
+      "webp": "assets/exercises/heel_touch.webp"
     },
     {
       "id": "mountain_climber",
       "turkishName": "Plankte Dizleri Sırayla Göğse Çekme",
       "englishName": "Mountain Climber",
-      "asset": "assets/exercises/mountain_climber.svg"
+      "png": "assets/exercises/mountain_climber.png",
+      "webp": "assets/exercises/mountain_climber.webp"
     },
     {
       "id": "incline_treadmill_walk",
       "turkishName": "Eğimli Yürüyüş",
       "englishName": "Incline Treadmill Walk",
-      "asset": "assets/exercises/incline_treadmill_walk.svg"
+      "png": "assets/exercises/incline_treadmill_walk.png",
+      "webp": "assets/exercises/incline_treadmill_walk.webp"
     }
   ]
 }
