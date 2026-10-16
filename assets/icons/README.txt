@@ -1,0 +1,1 @@
+KILO yerel ikon varlıkları.
