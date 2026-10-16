@@ -1,0 +1,1 @@
+KILO yerel beslenme varlıkları.
