@@ -14,7 +14,7 @@ Uygulama; **Bugün**, **Antrenman**, **Beslenme**, **Gelişim** ve **Ayarlar** o
 - Her ağırlık gününde ayarlanabilir eğimli yürüyüş
 - Set bazında kg, tekrar ve tamamlanma kaydı; gerçek önceki antrenman özeti
 - Double progression önerisi ve 60/90/120/150 saniyelik dinlenme sayacı
-- Başlangıç/bitiş pozu, hareket yönü ve ekipman gösteren dokunulabilir vektör egzersiz anlatımları
+- Başlangıç/bitiş pozu, hareket yönü ve ekipman gösteren 30 dokunulabilir SVG egzersiz anlatımı
 - 15 günlük, gramajlı ve makrolu beslenme planı; tarif detayları ve alternatifler
 - Tamamlanan öğünlerden otomatik kcal, protein, karbonhidrat ve yağ toplamı
 - Günlük kilo, gerçek 7 günlük hareketli ortalama, ölçü geçmişi ve 7/30/tümü grafikleri
@@ -67,7 +67,7 @@ assets/             yerel egzersiz/ikon/beslenme varlık alanları
 
 ## Egzersiz görsel lisansı
 
-Egzersiz çizimleri bu proje için sıfırdan yazılmış, uygulama içinde `CustomPainter` ile üretilen özgün vektörlerdir; harici görsel veya üçüncü taraf lisanslı içerik kullanılmaz. Her çizimde başlangıç/bitiş, ok ve harekete uygun ekipman hedeflenir.
+Egzersiz çizimleri KILO için hazırlanmış yerel SVG asset paketinden gelir ve `flutter_svg` ile değiştirilmeden gösterilir. Harici CDN kullanılmaz. Paket; başlangıç/bitiş pozu, hareket oku ve harekete uygun ekipmanı aynı kompozisyonda içerir.
 
 ## Testler
 

@@ -6,11 +6,11 @@ class Exercise {
     required this.sets,
     required this.minReps,
     required this.maxReps,
-    required this.kind,
     required this.tips,
     this.rest = 90,
   });
-  final String id, name, english, kind;
+  final String id, name, english;
+  String get illustrationAsset => 'assets/exercises/$id.svg';
   final int sets, minReps, maxReps, rest;
   final List<String> tips;
 }

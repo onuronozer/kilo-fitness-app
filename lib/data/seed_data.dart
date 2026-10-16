@@ -1,13 +1,12 @@
 import '../models/models.dart';
 
 const _row = Exercise(
-  id: 'row',
+  id: 'wide_grip_seated_cable_row',
   name: 'Oturarak Geniş Barı Göğse Çekiş',
   english: 'Wide Grip Seated Cable Row',
   sets: 3,
   minReps: 8,
   maxReps: 10,
-  kind: 'row',
   tips: [
     'Barı göğüs/üst karına çek.',
     'Göğsünü açık tut.',
@@ -15,56 +14,51 @@ const _row = Exercise(
   ],
 );
 const _pulldown = Exercise(
-  id: 'pulldown',
+  id: 'lat_pulldown',
   name: 'Geniş Tutuş Göğse Çekiş',
   english: 'Lat Pulldown',
   sets: 3,
   minReps: 8,
   maxReps: 10,
-  kind: 'pulldown',
   tips: [
     'Barı enseye değil üst göğse çek.',
     'Omuzlarını kulaklarından uzak tut.',
   ],
 );
 const _press = Exercise(
-  id: 'press',
-  name: 'Dambıl Göğüs Presi',
-  english: 'Dumbbell Bench Press',
+  id: 'incline_chest_press',
+  name: 'Eğimli Sehpada Göğüs Press',
+  english: 'Incline Chest Press',
   sets: 3,
   minReps: 8,
   maxReps: 10,
-  kind: 'bench',
   tips: ['Kürek kemiklerini sabitle.', 'Dambılları kontrollü indir.'],
 );
 const _lateral = Exercise(
-  id: 'lateral',
-  name: 'Yana Omuz Açış',
+  id: 'lateral_raise',
+  name: 'Kolları Yana Açış',
   english: 'Lateral Raise',
   sets: 3,
   minReps: 12,
   maxReps: 15,
-  kind: 'lateral',
   tips: ['Savurma yapmadan kontrollü kaldır.', 'Dirsekleri hafif kır.'],
 );
 const _face = Exercise(
-  id: 'face',
-  name: 'Halatı Yüze Çekiş',
+  id: 'face_pull',
+  name: 'Halatı Yüze Doğru Çekiş',
   english: 'Face Pull',
   sets: 3,
   minReps: 12,
   maxReps: 15,
-  kind: 'face',
   tips: ['Halatı yüzünün iki yanına çek.', 'Dirsekleri dışarıda tut.'],
 );
 const _curl = Exercise(
-  id: 'curl',
-  name: 'Dambıl Kol Büküş',
-  english: 'Dumbbell Curl',
+  id: 'cable_curl',
+  name: 'Kabloda Biceps Curl',
+  english: 'Cable Curl',
   sets: 3,
   minReps: 10,
   maxReps: 12,
-  kind: 'curl',
   tips: ['Dirsekleri gövdene yakın tut.', 'Belinden hız alma.'],
 );
 const _legPress = Exercise(
@@ -74,37 +68,33 @@ const _legPress = Exercise(
   sets: 4,
   minReps: 8,
   maxReps: 10,
-  kind: 'legpress',
   tips: ['Belini mindere yasla.', 'Dizleri kilitlemeden it.'],
 );
 const _legCurl = Exercise(
-  id: 'leg_curl',
-  name: 'Oturarak Arka Bacak Büküş',
+  id: 'seated_leg_curl',
+  name: 'Bacağı Arkaya Bükme',
   english: 'Seated Leg Curl',
   sets: 3,
   minReps: 10,
   maxReps: 12,
-  kind: 'legcurl',
   tips: ['Pedi topuğunla aşağı çek.', 'Kalçanı koltuktan kaldırma.'],
 );
-const _rdl = Exercise(
-  id: 'rdl',
-  name: 'Dambılla Romen Deadlift',
-  english: 'Dumbbell Romanian Deadlift',
+const _legExtension = Exercise(
+  id: 'leg_extension',
+  name: 'Oturarak Dizi Açma',
+  english: 'Leg Extension',
   sets: 3,
   minReps: 8,
   maxReps: 10,
-  kind: 'hinge',
-  tips: ['Kalçanı geriye gönder.', 'Sırtını nötr tut.'],
+  tips: ['Dizini kontrollü şekilde aç.', 'Ağırlığı savurmadan indir.'],
 );
 const _calf = Exercise(
-  id: 'calf',
+  id: 'standing_calf_raise',
   name: 'Ayakta Baldır Yükselişi',
   english: 'Standing Calf Raise',
   sets: 3,
   minReps: 12,
   maxReps: 15,
-  kind: 'calf',
   tips: ['En üstte kısa süre sık.', 'Topuğu kontrollü indir.'],
 );
 const _deadBug = Exercise(
@@ -114,7 +104,6 @@ const _deadBug = Exercise(
   sets: 3,
   minReps: 8,
   maxReps: 10,
-  kind: 'deadbug',
   tips: ['Bel boşluğunu yere bastır.', 'Karşı kol ve bacağı yavaşça uzat.'],
 );
 const _birdDog = Exercise(
@@ -124,7 +113,6 @@ const _birdDog = Exercise(
   sets: 3,
   minReps: 8,
   maxReps: 10,
-  kind: 'birddog',
   tips: ['Kalçanı döndürme.', 'Karşı kol ve bacağı aynı hizada uzat.'],
 );
 const _sidePlank = Exercise(
@@ -134,7 +122,6 @@ const _sidePlank = Exercise(
   sets: 3,
   minReps: 20,
   maxReps: 30,
-  kind: 'sideplank',
   tips: ['Kalçanı yere düşürme.', 'Başından topuğuna düz çizgi kur.'],
 );
 
@@ -146,7 +133,12 @@ const workouts = [
     _lateral,
     _curl,
   ]),
-  WorkoutDay('Lower A', 'Bacak ve kalça', [_legPress, _legCurl, _rdl, _calf]),
+  WorkoutDay('Lower A', 'Bacak ve kalça', [
+    _legPress,
+    _legCurl,
+    _legExtension,
+    _calf,
+  ]),
   WorkoutDay('Upper B', 'Sırt, omuz ve kollar', [
     _pulldown,
     _row,
@@ -156,7 +148,7 @@ const workouts = [
   ]),
   WorkoutDay('Lower B', 'Bacak ve arka zincir', [
     _legPress,
-    _rdl,
+    _legExtension,
     _legCurl,
     _calf,
   ]),

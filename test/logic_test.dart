@@ -1,6 +1,8 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:kilo_fitness_app/core/logic.dart';
 import 'package:kilo_fitness_app/models/models.dart';
+import 'package:kilo_fitness_app/data/seed_data.dart';
+import 'dart:io';
 
 void main() {
   test('15 günlük program tarihleri doğru', () {
@@ -65,5 +67,15 @@ void main() {
     final t = macroTotal([a, b], {'a'});
     expect(t.calories, 100);
     expect(t.protein, 10);
+  });
+  test('planda kullanılan her egzersizin SVG asseti vardır', () {
+    final exercises = workouts.expand((workout) => workout.exercises).toSet();
+    for (final exercise in exercises) {
+      expect(
+        File(exercise.illustrationAsset).existsSync(),
+        isTrue,
+        reason: exercise.id,
+      );
+    }
   });
 }
